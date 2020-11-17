@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --body-background: #E6EFF5;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: var(--body-background);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  width: clamp(311px, 80vw, 635px);
+  margin-top: clamp(72px, 5vh, 163px);
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+  border-radius: 8px;
+}
+
+.cta, .subscription, .benefits {
+  padding: clamp(24px, 7.7%, 40px);
+}
+
+.subscription, .benefits {
+  flex: 1;
+  min-width: 311px;
+}
+
+.cta {
+  background: #fff;
+  font-size: clamp(14px, 3.2vw, 16px);
+}
+
+.cta h1 {
+  font-weight: bold;
+  font-size: 1.43em;
+  line-height: 115.5%;
+  letter-spacing: -0.25px;
+  color: var(--cyan);
+}
+
+.cta h2 {
+  font-weight: bold;
+  font-size: 1.07em;
+  line-height: 20px;
+  letter-spacing: -0.1875px;  
+  color: var(--bright-yellow);
+  margin: 24px 0 16px 0;
+}
+
+.cta p {
+  font-weight: normal;
+  line-height: 186%;
+  letter-spacing: -0.175px;
+  color: var(--grayish-blue);
+}
+
+.subscription {
+  color: #fff;
+  background: #1FA6A2;
+}
+
+.subscription h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.225px;
+  margin-bottom: 18px;
+}
+
+.subscription p {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  margin-top: 4px;
+}
+
+.subscription .price {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: -0.4px;
+}
+
+.subscription .term {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  opacity: 0.5;
+}
+
+.subscription button {
+  width: clamp(237px, 100%, 263px);
+  margin-top: 26px;
+  padding: 15px;
+  background: var(--bright-yellow);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  border: none;
+  border-radius: 5px;
+
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.2px;
+  transition: all 0.3s ease;
+}
+
+.subscription button:hover {
+  transform: scale(1.1);
+}
+
+.benefits {
+  background: var(--cyan);
+  color: #fff;
+}
+
+.benefits h2 {
+  margin-bottom: 18px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.225px;
+}
+
+.benefits li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 20px; /* or 143% */
+  letter-spacing: -0.175px;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+
+.attribution {
+  width: 100vw;
+  align-self: flex-end;
+  margin-top: 50px;
+  padding: 30px 0 30px 0;
+  font-size: 11px;
+  text-align: center;
+  color: var(--cyan);
+  transition: all 0.5s ease-in-out;
+}
+
+.attribution:hover {
+  transform: scale(1.4);
+}
+
+.attribution a {
+  color: #888;
+}
+
+.attribution a:hover {
+  color: #000;
+}
